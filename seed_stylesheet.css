@@ -1,0 +1,411 @@
+
+/*bodyのフォントを決めます*/
+body{
+    font-family:'刻明朝 Regular';
+    
+}
+
+/*ヘッダーをつくります*/
+header{
+    background-color:white;
+    border-bottom:solid 2px #6C811D;
+    height:100px;
+    width:100%;
+    position:relative;
+}
+.title{
+    float:left;
+    padding-left:70px;
+    
+}
+a{
+    color:black; /*aタグのリンクの色を指定*/
+}
+.online{
+    font-family:'Great Vibes';
+    font-size:36px;
+}
+.header-right{
+    position:absolute;
+    width:500px;
+    height:100%; /*headerの高さと一致*/
+    left:1300px;
+}
+.search-engine{
+    position:absolute;
+    top:60px;
+    left:30px;
+}
+.search-engine input{
+    height:25px;
+}
+.login-link{
+    position:relative;
+    top:10px;
+    left:250px;
+    
+}
+.login-link li{
+    list-style:none;
+    margin-top:15px; /*リスト間の幅を広げる*/
+    font-size:20px;
+    border:solid 1px #6C811D;
+    border-radius:5px;
+    width:100px; /*boxがめちゃ長かったので指定*/
+    height:25px;
+    text-align:center; /*「ログイン」と「新規登録」を囲いの真ん中に配置*/
+    box-sizing:border-box;
+
+}
+.login-link a{
+    text-decoration:none; /*リンクの下線を消す*/
+    line-height:25px; /*aタグの部分がボックスの高さと同じにする*/
+    display:inline-block; /*aタグはinline要素なのでブロック要素にすることで、クリックが反映される箇所を広げる*/
+    width:100px; /*aタグの部分がボックスの幅と同じにする*/
+}
+/*mainを作ります*/
+.main{
+    background-image:URL("./Insert_images/opacity_MV1.png");
+    height:500px;
+    text-align:center;
+    border-bottom:solid 1px #6C811D;
+    border-color:rgba(108,129,29,0.3);
+    
+}
+.main-text{
+    display:inline-block; /*インラインブロックにすることで、h1とpが背景画像の上に重なった*/
+    padding-right:650px; /*背景画像の上の文字が右寄りなので、左に寄せるため*/
+    padding-left:300px; /*  背景画像の上の文字が寄っているので、さらに真ん中になるように寄せた*/
+}
+.plant{
+    font-family:'Great Vibes';
+    font-size:35px;
+}
+.main-text p{
+    font-size:24px;
+}
+.main-text h1{
+    margin-bottom:75px; /*h1とpの間隔を空けたかったので*/
+}
+
+/*menuをつくります*/
+/*Western menuを作ります*/
+.menu1{
+    position:relative;
+    width:100%;
+    height:500px;
+    border-bottom:solid 1px rgba(108,129,29,0.3);
+}
+.G {
+    font-family:'Great Vibes'; /*クラスGにしたものはすべてGreat Vibesに変換*/
+}
+.menu-contents{
+    position:absolute; /*menu-contentsのブロックを基準として、各ブロックを移動させることとする*/    
+    width:100px;
+    height:100px;
+    
+}
+.block1 {
+    width:175px;
+    text-align:right; /*「西洋のお野菜」と「Western Vegetables」を右詰めに移動*/
+    position:absolute;
+    top:45px;
+    left:450px;
+    line-height:15px;
+}
+.western{
+    font-size:25px;
+    border-bottom:solid 0.5px rgba(0,0,0,0.3);
+}
+.seiyou{
+    font-size:18px;
+    
+}
+.img1{
+    position:absolute;
+    top:150px;
+    left:300px;
+    filter:drop-shadow(15px 15px 4px rgba(171,164,164,0.6));
+}
+.img1:hover{
+    opacity:0.7;
+    transition:0.2s;
+}
+.img1 img:active{
+    position:relative;
+    top:15px;
+    left:15px;
+}
+.reco-contents{
+    position:absolute; /*reco-contentsのブロックを基準として、各ブロックを移動させることとする*/
+    width:50px;
+    height:50px;
+}
+.carrot{
+    position:absolute;
+    top:200px;
+    left:750px;
+    filter:drop-shadow(15px 15px 4px rgba(171,164,164,0.6)); /*画像に影をつける：box-shadowより使い勝手がいい*/
+    text-align:right; /*「Carrot」の文字を画像の右寄りに*/
+}
+.carrot:hover{
+    opacity:0.7;
+    transition:0.2s;
+}
+.carrot img:active{
+    position:relative;
+    top:15px;
+    left:15px;
+}
+.carrot p{
+    font-size:23px;   
+}
+.tomato{
+    position:absolute;
+    top:200px;
+    left:1050px;
+    filter:drop-shadow(15px 15px 4px rgba(171,164,164,0.6)); 
+    text-align:right; 
+}
+.tomato:hover{
+    opacity:0.7;
+    transition:0.2s;
+}
+.tomato img:active{
+    position:relative;
+    top:15px;
+    left:15px;
+}
+.tomato p{
+    font-size:23px;
+    
+}
+.recommend{
+    position:absolute;
+    top:100px;
+    left:950px;
+    font-size:25px;    
+}
+
+/*Kyo menuを作ります*/
+.menu2{
+    position:relative;
+    width:100%;
+    height:500px;
+    left:450px; /*menu2ブロックを左にずらして、全体を左へずれさせる*/
+    
+}
+.menu-contents2{
+    position:absolute;
+    width:150px;
+    height:150px;
+}
+.reco-contents2{
+    position:absolute;
+    width:50px;
+    height:50px;
+}                  /*入れ子に入れ子を重ねて、基準点を左上に統一しておく*/
+.block2 {
+    width:175px;
+    text-align:right; /*「京のお野菜」と「Kyo Vegetables」を右詰めに移動*/
+    position:absolute;
+    top:45px;
+    left:450px;
+    line-height:15px;
+}
+.Kyo{
+    font-size:25px;
+    border-bottom:solid 1px rgba(0,0,0,0.3);
+}
+.kiou{
+    font-size:18px;
+    
+}
+.img2{
+    position:absolute;
+    top:150px;
+    left:300px;
+    filter:drop-shadow(15px 15px 4px rgba(171,164,164,0.6));
+}
+.img2:hover{
+    opacity:0.7;
+    transition:0.2s;
+}
+.img2 img:active{
+    position:relative;
+    top:15px;
+    left:15px;
+}
+.recommend2{
+    position:absolute;
+    top:100px;
+    left:950px;
+    font-size:25px;    
+}
+.egg{
+    position:absolute;
+    top:200px;
+    left:750px;
+    filter:drop-shadow(15px 15px 4px rgba(171,164,164,0.6)); /*画像に影をつける：box-shadowより使い勝手がいい*/
+    text-align:right; /*「Carrot」の文字を画像の右寄りに*/
+}
+.egg:hover{
+    opacity:0.7;
+    transition:0.2s;
+}
+.egg img:active{
+    position:relative;
+    top:15px;
+    left:15px;
+}
+.egg p{
+    font-size:23px;
+    
+}
+.pumpkin{
+    position:absolute;
+    top:200px;
+    left:1050px;
+    filter:drop-shadow(15px 15px 4px rgba(171,164,164,0.6)); 
+    text-align:right; 
+}
+.pumpkin:hover{
+    opacity:0.7;
+    transition:0.2s;
+}
+.pumpkin img:active{
+    position:relative;
+    top:15px;
+    left:15px;
+}
+.pumpkin p{
+    font-size:23px;
+    
+}
+
+/*Flower menuを作ります*/
+.menu3{
+    position:relative;
+    width:100%;
+    height:500px;
+    border-top:solid 1px rgba(108,129,29,0.3);
+}
+.menu-contents3{
+    position:absolute;
+    width:100px;
+    height:100px;
+
+}
+.reco-contents3{
+    position:absolute;
+    width:50px;
+    height:50px;
+}
+.block3 {
+    width:175px;
+    text-align:right; /*「お花」と「Flower」を右詰めに移動*/
+    position:absolute;
+    top:45px;
+    left:450px;
+    line-height:15px;
+}
+.flower{
+    font-size:25px;
+    border-bottom:solid 0.5px rgba(0,0,0,0.3);
+    
+}
+.ohana{
+    font-size:18px;
+    
+}
+.img3{
+    position:absolute;
+    top:150px;
+    left:300px;
+    filter:drop-shadow(15px 15px 4px rgba(171,164,164,0.6));
+}
+.img3:hover{
+    opacity:0.7;
+    transition:0.2s;
+}
+.img3 img:active{
+    position:relative;
+    top:15px;
+    left:15px;
+}
+.recommend3{
+    position:absolute;
+    top:100px;
+    left:950px;
+    font-size:25px;    
+}
+.cosmos{
+    position:absolute;
+    top:200px;
+    left:750px;
+    filter:drop-shadow(15px 15px 4px rgba(171,164,164,0.6)); /*画像に影をつける：box-shadowより使い勝手がいい*/
+    text-align:right; /*「Cosmos」の文字を画像の右寄りに*/
+}
+.cosmos:hover{
+    opacity:0.7;
+    transition:0.2s;
+}
+.cosmos img:active{
+    position:relative;
+    top:15px;
+    left:15px;
+}
+.cosmos p{
+    font-size:23px;
+    
+}
+.pansy{
+    position:absolute;
+    top:200px;
+    left:1050px;
+    filter:drop-shadow(15px 15px 4px rgba(171,164,164,0.6)); 
+    text-align:right; 
+}
+.pansy:hover{
+    opacity:0.7;
+    transition:0.2s;
+}
+.pansy img:active{
+    position:relative;
+    top:15px;
+    left:15px;
+}
+.pansy p{
+    font-size:23px;
+    
+}
+
+/*フッターを作ります*/
+footer{
+    border-top:solid 2px #6C811D;
+    position:relative;
+}
+.footer-text{
+    font-size:28px;
+    position:absolute;
+    top:15px;
+    left:30px;
+}
+.footer-right1{
+    position:absolute;
+    left:1400px;
+    font-size:18px;
+}
+.footer-right1 li{
+    list-style:none;
+    margin-top:10px; /*リスト同士の間隔を広げるため*/
+}
+.footer-right2{
+    position:absolute;
+    left:1600px;
+    font-size:18px;
+}
+.footer-right2 li{
+    list-style:none;
+    margin-top:10px;
+}
