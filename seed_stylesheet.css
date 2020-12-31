@@ -1,7 +1,16 @@
-
+/* すべての要素に対して box-sizing: border-box; を指定してください */
+*{
+    box-sizing:border-box;
+  }
+/*GitHub用*/
+@font-face {
+  font-family:'Great Vibes';
+  src: url('./GreatVibes-Regular.ttf');
+}
 /*bodyのフォントを決めます*/
 body{
     font-family:'刻明朝 Regular';
+    width:100%;
     
 }
 
